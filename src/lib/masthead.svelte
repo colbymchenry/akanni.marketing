@@ -10,7 +10,7 @@
     <div class="content" data-split="lines" data-split-page-reveal>
         <h1>We scale brands profitably through</h1>
         <h1 id="typing-masthead"></h1>
-        <p>Our roles are simple. We generate the revenue. You perfect the product.</p>
+        <p>Our roles are simple. We generate the revenue.<br />You perfect the product.</p>
         <a href="#">Let's Chat</a>
     </div>
 
@@ -57,19 +57,20 @@
       }
 
       p {
-        max-width: 18.75rem;
+        max-width: 35.75rem;
         color: var(--font-light);
         line-height: 1.8;
+        font-size: 1.2rem;
       }
 
       a {
         transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), border 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
         color: #FFFFFF;
         min-width: 8.25rem;
-        padding: 1.125rem 1.875rem;
-        font-size: 0.9375rem;
+        padding: 1.325rem 1.875rem;
+        font-size: 1.2375rem;
         line-height: 1;
-        font-weight: 500;
+        font-weight: 400;
         text-transform: capitalize;
         letter-spacing: 0.03em;
         text-align: center;
