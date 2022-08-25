@@ -17,6 +17,10 @@
     <div class="scroll-down">
         Scroll Down <span class="arrow-down">{@html iconArrowDown}</span>
     </div>
+
+    <div class="leads">
+        Creating, driving, converting, and retaining leads.
+    </div>
 </section>
 
 <style lang="scss">
@@ -31,6 +35,21 @@
     overflow: hidden;
     cursor: pointer;
     height: 2rem;
+    animation: fadeIn 1s ease 3.2s forwards;
+    opacity: 0;
+  }
+
+  .leads {
+    position: absolute;
+    bottom: 4rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    height: 2rem;
+    color: var(--font-light);
+    animation: fadeIn 1s ease 3.2s forwards;
+    opacity: 0;
   }
 
   section {
@@ -49,6 +68,8 @@
       margin-left: 20%;
       margin-right: 20%;
       gap: 2rem;
+      opacity: 0;
+      animation: fadeIn 1s ease 3.2s forwards;
 
       h1 {
         line-height: 1.2;
@@ -123,6 +144,17 @@
 
     .scroll-down {
       left: 5%;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-bottom: -5rem;
+    }
+    to {
+      opacity: 1;
+      margin-bottom: 0;
     }
   }
 

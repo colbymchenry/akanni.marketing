@@ -1,40 +1,41 @@
 <script>
-    import {
-        iconArrowStars, iconAutograph, iconEarbuds,
-        iconFacebook,
-        iconGlobeSearch,
-        iconGoogle,
-        iconGraphUp, iconHandshake,
-        iconMail,
-        iconPen, iconWeb
-    } from "./icons.js";
+    import {iconAutograph, iconFacebook, iconGlobeSearch, iconHandshake, iconMail, iconWeb} from "./icons.js";
+    import Modal from "./modal.svelte";
 
     const services = [
         {
-            name: "Facebook &<br />Instagram Ads",
-            icon: iconFacebook
+            name: "Facebook/IG Ads",
+            icon: iconFacebook,
+            description: "Through changes to each app's algorithm, the organic reach of posts has extremely diminished. Ads are the best way to increase brand exposure on each platform and reach your target audience."
         },
         {
             name: "SEO",
-            icon: iconGlobeSearch
+            icon: iconGlobeSearch,
+            description: "The most direct and immediate form of communication with your customers. Through this channel subscribers can be directly notified about all announcements regarding the brand increasing their LTV."
         },
         {
             name: "Conversion Rate",
-            icon: iconAutograph
+            icon: iconAutograph,
+            description: "Improving conversion rate will result in lowering your customer's acquisition costs. The less you have to spend to acquire a customer the better. By optimizing your conversion rate you can increase revenue per visitor, acquire more customers, and grow your business."
         },
         {
             name: "Email & SMS",
-            icon: iconMail
+            icon: iconMail,
+            description: "Formulate a strategy to implement in order to reach goals in most efficient way."
         },
         {
             name: "Brand Direction",
-            icon: iconHandshake
+            icon: iconHandshake,
+            description: "Your website is your virtual store-front where customers are brought into the world of your brand/ company, so websites need to be designed with intention. Each page operates as a potential landing page. A high converting landing page is designed to get visitors to do a specific CTA."
         },
         {
             name: "Web Design",
-            icon: iconWeb
+            icon: iconWeb,
+            description: "One of the best ways to organically drive traffic to website. By ranking higher in search results there will be an increase in brand exposure which boosts brand credibility and increase awareness."
         }
     ]
+
+    let selectedService = null;
 </script>
 
 
@@ -47,7 +48,7 @@
 
     <div class="services">
         {#each services as service}
-            <div class="service">
+            <div class="service" on:click={() => selectedService = service}>
                 <div>{@html service.icon}</div>
                 <h5>{@html service.name}</h5>
             </div>
@@ -55,6 +56,13 @@
     </div>
 
 </section>
+
+{#if selectedService}
+    <Modal title={selectedService.name} onClose={() => selectedService = null}>
+        {selectedService.description}
+    </Modal>
+{/if}
+
 
 <style lang="scss">
 
@@ -76,12 +84,12 @@
     cursor: pointer;
 
     &:hover {
-        div {
-          transform: scale(1.2);
-          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-          color: var(--bg-dark);
-          background-color: var(--accent-color);
-        }
+      div {
+        transform: scale(1.2);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        color: var(--bg-dark);
+        background-color: var(--accent-color);
+      }
     }
 
     div {
@@ -170,6 +178,7 @@
 
     .service {
       justify-content: center;
+
       h5 {
         font-size: 1.5rem;
       }
