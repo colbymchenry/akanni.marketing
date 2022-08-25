@@ -9,6 +9,7 @@
     --bg-dark: #120323;
     --font-light: rgb(197, 197, 197);
     --accent-color: #6812EB;
+    --preloader-image: url('/loader.svg');
 }
 
 html, body {
@@ -88,4 +89,8 @@ h1, h2, h3, h4, h5, p, input, textarea, span, div {
 
 .btn:visited {
     text-decoration: none;
+}
+
+svg {
+    max-height: 100%;
 }

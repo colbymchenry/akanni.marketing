@@ -2,8 +2,10 @@
   import Header from "./lib/header.svelte";
   import Masthead from "./lib/masthead.svelte";
   import Services from "./lib/services.svelte";
+  import Loader from "./lib/loader.svelte";
 </script>
 
+<Loader />
 <Header />
 <Masthead />
 <Services />

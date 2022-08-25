@@ -120,6 +120,10 @@
     .clear-circle {
       right: -50vw !important;
     }
+
+    .scroll-down {
+      left: 5%;
+    }
   }
 
 </style>

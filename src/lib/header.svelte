@@ -1,5 +1,7 @@
 <script>
 
+    import {iconLogo} from "./icons.js";
+
     let hidden = false;
 
     let lastScrollTop = 0;
@@ -20,7 +22,7 @@
 <svelte:body on:scroll={handleScroll} />
 
 <header class:is--hidden={hidden} class:is--opaque={lastScrollTop > 10}>
-    <img src="/logos/purple.png" alt=""/>
+    {@html iconLogo}
 </header>
 
 <style lang="scss">
@@ -29,7 +31,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 4.25rem;
+    height: 5.25rem;
     padding: 1rem 2rem;
     transition: box-shadow 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.05s, background-color 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.05s, margin-top 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
     display: flex;
@@ -37,9 +39,7 @@
     background-color: transparent;
     z-index: 10;
 
-    img {
-      max-height: 100%;
-    }
+    color: var(--accent-color);
 
     &.is--hidden {
       margin-top: -4.5rem;
