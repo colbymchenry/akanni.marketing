@@ -42,7 +42,7 @@
     color: var(--accent-color);
 
     &.is--hidden {
-      margin-top: -4.5rem;
+      margin-top: -6rem;
     }
 
     &.is--opaque {

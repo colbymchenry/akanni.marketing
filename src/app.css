@@ -10,6 +10,7 @@
     --font-light: rgb(197, 197, 197);
     --accent-color: #6812EB;
     --preloader-image: url('/loader.svg');
+    --preloader-transition: 2s cubic-bezier(.38,.55,.86,.15) 0.05s;
 }
 
 html, body {
