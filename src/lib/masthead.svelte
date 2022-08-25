@@ -47,6 +47,7 @@
       display: flex;
       flex-direction: column;
       margin-left: 20%;
+      margin-right: 20%;
       gap: 2rem;
 
       h1 {
@@ -70,8 +71,8 @@
   .grey-circle {
     background-color: #17171C;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
-    width: 64vw;
-    height: 64vw;
+    width: clamp(400px, 64vw, 4000px);
+    height: clamp(400px, 64vw, 4000px);
     border-radius: 100%;
     transform: translate(0px, 0%);
     opacity: 1;
@@ -86,11 +87,39 @@
     position: absolute;
     background-color: var(--bg-dark);
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.35);
-    width: 68.4vw;
-    height: 68.4vw;
+    width: clamp(400px, 68.4vw, 4000px);
+    height: clamp(400px, 68.4vw, 4000px);
     border-radius: 100%;
     transform: translate(0px, 0%);
     opacity: 1;
+  }
+
+  // mobile breakpoint
+  @media screen and (max-width: 640px) {
+    #typing-masthead {
+      margin-top: -2rem;
+    }
+
+    .content {
+      margin-left: 5% !important;
+      margin-right: 5% !important;
+
+      h1 {
+        font-size: 10.5vw !important;
+      }
+
+      p {
+        font-size: 1rem !important;
+      }
+
+      a {
+        font-size: 0.9rem !important;
+      }
+    }
+
+    .clear-circle {
+      right: -50vw !important;
+    }
   }
 
 </style>

@@ -1,18 +1,26 @@
 <script>
-    import {iconFacebook, iconGoogle, iconGraphUp, iconMail, iconPen} from "./icons.js";
+    import {
+        iconArrowStars, iconAutograph, iconEarbuds,
+        iconFacebook,
+        iconGlobeSearch,
+        iconGoogle,
+        iconGraphUp, iconHandshake,
+        iconMail,
+        iconPen, iconWeb
+    } from "./icons.js";
 
     const services = [
         {
-            name: "Facebook Ads",
+            name: "Facebook &<br />Instagram Ads",
             icon: iconFacebook
         },
         {
             name: "SEO",
-            icon: iconGoogle
+            icon: iconGlobeSearch
         },
         {
             name: "Conversion Rate",
-            icon: iconGraphUp
+            icon: iconAutograph
         },
         {
             name: "Email & SMS",
@@ -20,11 +28,11 @@
         },
         {
             name: "Brand Direction",
-            icon: iconMail
+            icon: iconHandshake
         },
         {
             name: "Web Design",
-            icon: iconPen
+            icon: iconWeb
         }
     ]
 </script>
@@ -41,7 +49,7 @@
         {#each services as service}
             <div class="service">
                 <div>{@html service.icon}</div>
-                <h5>{service.name}</h5>
+                <h5>{@html service.name}</h5>
             </div>
         {/each}
     </div>
@@ -61,7 +69,7 @@
   .service {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: var(--accent-color);
     padding: 1.875rem 1.5rem;
@@ -97,6 +105,7 @@
       color: var(--accent-color);
       font-weight: 400;
       font-size: 2rem;
+      text-align: center;
     }
   }
 
@@ -126,6 +135,43 @@
         span {
           text-decoration: line-through;
         }
+      }
+    }
+  }
+
+  // tablet breakpoint
+  @media screen and (max-width: 1200px) {
+
+    section {
+      padding: 10rem 5%;
+    }
+
+    .services {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+  }
+
+  // mobile breakpoint
+  @media screen and (max-width: 640px) {
+    .services {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-row-gap: 1rem;
+    }
+
+    .heading > span {
+      font-size: 0.8rem !important;
+    }
+
+    .heading h1 {
+      font-size: 1.75rem !important;
+    }
+
+    .service {
+      justify-content: center;
+      h5 {
+        font-size: 1.5rem;
       }
     }
   }
