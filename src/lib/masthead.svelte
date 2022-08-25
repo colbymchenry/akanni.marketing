@@ -10,8 +10,8 @@
     <div class="content" data-split="lines" data-split-page-reveal>
         <h1>We scale brands profitably through</h1>
         <h1 id="typing-masthead"></h1>
-        <p>Our roles are simple. We generate the revenue.<br />You perfect the product.</p>
-        <a href="#">Let's Chat</a>
+        <p>Our roles are simple. We generate the revenue.<br/>You perfect the product.</p>
+        <a href="#" class="btn">Let's Chat</a>
     </div>
 
     <div class="scroll-down">
@@ -63,34 +63,7 @@
         font-size: 1.2rem;
       }
 
-      a {
-        transition: background-color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), color 300ms cubic-bezier(0.165, 0.84, 0.44, 1), border 300ms cubic-bezier(0.165, 0.84, 0.44, 1);
-        color: #FFFFFF;
-        min-width: 8.25rem;
-        padding: 1.325rem 1.875rem;
-        font-size: 1.2375rem;
-        line-height: 1;
-        font-weight: 400;
-        text-transform: capitalize;
-        letter-spacing: 0.03em;
-        text-align: center;
-        border-radius: 3.75rem;
-        background-color: transparent;
-        border: 0.0625rem solid #ffffff;
-        text-decoration: none;
-        justify-self: flex-start;
-        align-self: flex-start;
 
-        &:hover {
-          background-color: white;
-          color: black;
-          text-decoration: none;
-        }
-
-        &:visited {
-          text-decoration: none;
-        }
-      }
     }
   }
 

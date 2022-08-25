@@ -8,3 +8,14 @@
 <Masthead />
 <Services />
 
+<div>
+    <a class="btn" href="">Let's Work</a>
+</div>
+
+<style lang="scss">
+    div {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 8rem;
+    }
+</style>
