@@ -60,6 +60,7 @@
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
     z-index: 11;
     opacity: 0;
     animation: fadeIn 0.5s ease 0.05s forwards;
