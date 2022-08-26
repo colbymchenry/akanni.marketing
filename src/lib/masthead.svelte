@@ -12,13 +12,17 @@
         <h1 id="typing-masthead"></h1>
         <p>Our roles are simple. We generate the revenue.<br/>You perfect the product.</p>
         <a href="#" class="btn">Let's Chat</a>
+
+        <div class="leads mobile">
+            Creating, driving, converting, and retaining leads.
+        </div>
     </div>
 
     <div class="scroll-down">
         Scroll Down <span class="arrow-down">{@html iconArrowDown}</span>
     </div>
 
-    <div class="leads">
+    <div class="leads desktop">
         Creating, driving, converting, and retaining leads.
     </div>
 </section>
@@ -115,8 +119,20 @@
     opacity: 1;
   }
 
+  .mobile {
+    display: none;
+  }
+
   // mobile breakpoint
   @media screen and (max-width: 640px) {
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
+      display: flex;
+    }
+
     #typing-masthead {
       margin-top: -2rem;
     }
@@ -148,8 +164,10 @@
     }
 
     .leads {
-      bottom: 7rem;
-      left: 5%;
+      position: relative;
+      bottom: unset;
+      left: unset;
+      right: unset;
     }
   }
 
