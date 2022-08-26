@@ -53,10 +53,7 @@
   }
 
   section {
-    height: -webkit-fill-available;
-    min-height: -moz-available;
-    min-height: -webkit-fill-available;
-    min-height: fill-available;
+    height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
