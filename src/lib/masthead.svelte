@@ -145,6 +145,11 @@
     .scroll-down {
       left: 5%;
     }
+
+    .leads {
+      bottom: 8.5rem;
+      left: 5%;
+    }
   }
 
   @keyframes fadeIn {

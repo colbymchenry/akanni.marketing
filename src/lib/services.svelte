@@ -11,7 +11,7 @@
         {
             name: "SEO",
             icon: iconGlobeSearch,
-            description: "The most direct and immediate form of communication with your customers. Through this channel subscribers can be directly notified about all announcements regarding the brand increasing their LTV."
+            description: "One of the best ways to organically drive traffic to website. By ranking higher in search results there will be an increase in brand exposure which boosts brand credibility and increase awareness."
         },
         {
             name: "Conversion Rate",
@@ -21,17 +21,17 @@
         {
             name: "Email & SMS",
             icon: iconMail,
-            description: "Formulate a strategy to implement in order to reach goals in most efficient way."
+            description: "The most direct and immediate form of communication with your customers. Through this channel subscribers can be directly notified about all announcements regarding the brand increasing their LTV."
         },
         {
             name: "Brand Direction",
             icon: iconHandshake,
-            description: "Your website is your virtual store-front where customers are brought into the world of your brand/ company, so websites need to be designed with intention. Each page operates as a potential landing page. A high converting landing page is designed to get visitors to do a specific CTA."
+            description: "Formulate a strategy to implement in order to reach goals in most efficient way."
         },
         {
             name: "Web Design",
             icon: iconWeb,
-            description: "One of the best ways to organically drive traffic to website. By ranking higher in search results there will be an increase in brand exposure which boosts brand credibility and increase awareness."
+            description: "Your website is your virtual store-front where customers are brought into the world of your brand/ company, so websites need to be designed with intention. Each page operates as a potential landing page. A high converting landing page is designed to get visitors to do a specific CTA."
         }
     ]
 

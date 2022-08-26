@@ -36,6 +36,7 @@
     transition: box-shadow 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.05s, background-color 0.4s cubic-bezier(0.77, 0, 0.175, 1) 0.05s, margin-top 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     background-color: transparent;
     z-index: 10;
 
