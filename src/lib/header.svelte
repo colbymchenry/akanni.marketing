@@ -18,7 +18,7 @@
 
 <svelte:body on:scroll={handleScroll} />
 
-<header class:is--opaque={lastScrollTop > 10}>
+<header>
     <img src="/loader-purple.svg" alt="" />
 </header>
 
@@ -34,33 +34,28 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: transparent;
     z-index: 10;
     color: var(--accent-color);
+    margin-top: -6rem;
+    animation: fadeIn 1s ease 3.2s forwards;
+    background-color: rgba(10, 10, 15, 0.96);
 
     > img {
       max-height: 100%;
-      animation: fadeIn 1s ease 3.2s forwards;
-      opacity: 0;
     }
 
     &.is--hidden {
       margin-top: -6rem;
     }
 
-    &.is--opaque {
-      background-color: rgba(10, 10, 15, 0.96);
-    }
   }
 
   @keyframes fadeIn {
     from {
-      opacity: 0;
-      margin-bottom: -5rem;
+      margin-top: -6rem;
     }
     to {
-      opacity: 1;
-      margin-bottom: 0;
+      margin-top: 0;
     }
   }
 </style>
