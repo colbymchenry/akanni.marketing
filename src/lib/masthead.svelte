@@ -144,10 +144,11 @@
 
     .scroll-down {
       left: 5%;
+      bottom: 3rem;
     }
 
     .leads {
-      bottom: 8rem;
+      bottom: 7rem;
       left: 5%;
     }
   }
