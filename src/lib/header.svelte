@@ -1,7 +1,4 @@
 <script>
-
-    import {iconLogo} from "./icons.js";
-
     let hidden = false;
 
     let lastScrollTop = 0;
@@ -21,7 +18,7 @@
 
 <svelte:body on:scroll={handleScroll} />
 
-<header class:is--hidden={hidden} class:is--opaque={lastScrollTop > 10}>
+<header class:is--opaque={lastScrollTop > 10}>
     <img src="/loader-purple.svg" alt="" />
 </header>
 
@@ -43,6 +40,8 @@
 
     > img {
       max-height: 100%;
+      animation: fadeIn 1s ease 3.2s forwards;
+      opacity: 0;
     }
 
     &.is--hidden {
@@ -51,6 +50,17 @@
 
     &.is--opaque {
       background-color: rgba(10, 10, 15, 0.96);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      margin-bottom: -5rem;
+    }
+    to {
+      opacity: 1;
+      margin-bottom: 0;
     }
   }
 </style>
