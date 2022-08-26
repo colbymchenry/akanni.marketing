@@ -22,7 +22,7 @@
 <svelte:body on:scroll={handleScroll} />
 
 <header class:is--hidden={hidden} class:is--opaque={lastScrollTop > 10}>
-    {@html iconLogo}
+    <img src="/loader-purple.svg" alt="" />
 </header>
 
 <style lang="scss">
@@ -39,8 +39,11 @@
     justify-content: flex-start;
     background-color: transparent;
     z-index: 10;
-
     color: var(--accent-color);
+
+    > img {
+      max-height: 100%;
+    }
 
     &.is--hidden {
       margin-top: -6rem;
@@ -48,7 +51,6 @@
 
     &.is--opaque {
       background-color: rgba(10, 10, 15, 0.96);
-
     }
   }
 </style>

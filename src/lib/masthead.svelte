@@ -147,7 +147,7 @@
     }
 
     .leads {
-      bottom: 8.5rem;
+      bottom: 8rem;
       left: 5%;
     }
   }
