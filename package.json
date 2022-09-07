@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "firebase deploy --only hosting"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
@@ -14,5 +15,8 @@
     "svelte": "^3.49.0",
     "svelte-preprocess": "^4.10.7",
     "vite": "^3.0.7"
+  },
+  "dependencies": {
+    "firebase": "^9.9.4"
   }
 }
